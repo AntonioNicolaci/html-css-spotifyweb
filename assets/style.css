@@ -14,6 +14,10 @@ body{
     justify-content: end;
     background-color: rgba(0, 0, 0, 0.5);
     padding: 2em 1em 2em 0;
+    position: sticky;
+    position: absolute;
+    left: 0;
+    right: 0;
     z-index: 10;
 }
 #btn-update{
@@ -27,13 +31,88 @@ body{
 /* ---------------------------------------------- NAV BAR ---------------------------------------------- */
 /* BARRA LATERALE CHE CONTIENE I VARI PULSANTI */
 nav{
+    display: flex;
+    flex-direction: column;
     background-color: #000;
+    color: rgb(113, 113, 113);
+    width: 13em;
+    height: calc(100vh - 5em);
+    padding-left: .5em;
+    position: sticky;
+    left: 0;
+    right: 0;
+    z-index: 20;
+}
+nav div{
+    display: flex;
+    flex-direction: column;
+}
+#nav-logo{
+    margin: 1em;
+    height: 5%;
+    align-self: start;
+}
+#nav-bottoni, #nav-playlist{
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+#nav-bottoni span{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.nav-bottoni-img{
+    width: 2em;
+    height: auto;
+}
+#nav-playlist h4{
+    color: #fff;
+}
+#nav-playlist .bi-plus-square-fill{
+    width: 2em;
+}
+#nav-finale{
+    margin-top: calc(50vh - 8em);
 }
 /* ---------------------------------------------- NAV BAR ---------------------------------------------- */
 
 /* ---------------------------------------------- CONTROL BAR ---------------------------------------------- */
-#control{
+#controllo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    height: 5em;
+    color: red;
+    position: sticky;
+    position: absolute;
+    right: 0;
+    z-index: 30;
     background-color: #282828;
+}
+#controllo-musica{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#controllo-musica-brano{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    margin-right: 1.5em;
+}
+#controllo-musica-brano img{
+    width: 3em;
+    margin-right: .5em;
+    padding-left: .5em;
+}
+#controllo-musica-brano h3, #controllo-musica-brano span{
+    font-size: 0.9em;
+}
+#controllo-musica i{
+    margin-right: .5em;
 }
 /* ---------------------------------------------- CONTROL BAR ---------------------------------------------- */
 
