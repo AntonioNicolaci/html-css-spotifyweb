@@ -78,6 +78,7 @@ nav div{
 /* ---------------------------------------------- NAV BAR ---------------------------------------------- */
 
 /* ---------------------------------------------- CONTROL BAR ---------------------------------------------- */
+/* ZONA DI SINISTRA CON L'IMMAGINE DELLA CANZONE */
 #controllo{
     display: flex;
     justify-content: space-between;
@@ -114,6 +115,30 @@ nav div{
 #controllo-musica i{
     margin-right: .5em;
 }
+/* ZONA DI SINISTRA CON L'IMMAGINE DELLA CANZONE */
+
+/* ZONA CON I PULSANTI DI PLAY E LA BARRA */
+#controllo-player{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 22px;
+}
+#controllo-player-pulsanti{
+    display: flex;
+    gap: 1.5em;
+}
+#controllo-player-barra{
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    gap: 1em;
+}
+#controllo-player-barra input[type="range"]{
+    width: 40em;
+    background: white;
+}
+/* ZONA CON I PULSANTI DI PLAY E LA BARRA */
 /* ---------------------------------------------- CONTROL BAR ---------------------------------------------- */
 
 /* ---------------------------------------------- SEZIONE DELLA MUSICA ---------------------------------------------- */
