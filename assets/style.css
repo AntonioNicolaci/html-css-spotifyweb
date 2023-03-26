@@ -6,6 +6,10 @@
 }
 body{
     background-color: #141922;
+    color: rgb(113, 113, 113);
+}
+h3{
+    color: #fff;
 }
 /* ---------------------------------------------- UPDATE BAR ---------------------------------------------- */
 /* BARRA CON IL PULSANTE "EFFETTUA L'UPDATE" */
@@ -178,6 +182,43 @@ nav div{
 /* ZONA CON I PULSANTI PER IL VOLUME */
 /* ---------------------------------------------- CONTROL BAR ---------------------------------------------- */
 
-/* ---------------------------------------------- SEZIONE DELLA MUSICA ---------------------------------------------- */
-
-/* ---------------------------------------------- SEZIONE DELLA MUSICA ---------------------------------------------- */
+/* ---------------------------------------------- MAIN SEZIONE DELLA MUSICA ---------------------------------------------- */
+main{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: calc(100% - 13.5em);
+    position: absolute;
+    top: 7em;
+    left: 13.5em;
+    z-index: 100;
+}
+#main-bottoni{
+    display: flex;
+    gap: 1em;
+}
+#mian-rp, #main-creato-per-te, #main-artisti-popolari{
+    align-self: flex-start;
+}
+#main-rp{
+    display: flex;
+    flex-direction: column;
+}
+#main-rp h3:not(.mrp-card h3){
+    padding-left: .5em;
+    margin-bottom: 1em;
+}
+#main-rp div{
+    display: flex;
+}
+.mrp-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: calc(100% - 20px);
+}
+.mrp-card img{
+    width: calc(100% - 20px);
+}
+/* ---------------------------------------------- MAIN SEZIONE DELLA MUSICA ---------------------------------------------- */
