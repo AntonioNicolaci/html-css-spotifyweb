@@ -37,7 +37,7 @@ nav{
     color: rgb(113, 113, 113);
     width: 13em;
     height: calc(100vh - 5em);
-    padding-left: .5em;
+    padding: 0 .5em;
     position: sticky;
     left: 0;
     right: 0;
@@ -73,7 +73,33 @@ nav div{
     width: 2em;
 }
 #nav-finale{
-    margin-top: calc(50vh - 8em);
+    margin-top: 33vh;
+}
+#nav-finale img{
+    width: 1.5em;
+    height: 1.5em;
+}
+.nav-finale-oggetto{
+    display: flex;
+    flex-direction: row;
+    gap: .5em;
+}
+#nav-finale-download{
+    border-bottom: 2px solid rgb(128, 128, 128);
+    padding-bottom: .5em;
+}
+#nav-finale-profilo{
+    display: flex;
+    flex-direction: row;
+    color: #fff;
+    padding-top: .5em;
+}
+#nav-finale-profilo span{
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    background-color: rgb(128, 128, 128);
+    border-radius: 1.5em;
 }
 /* ---------------------------------------------- NAV BAR ---------------------------------------------- */
 
