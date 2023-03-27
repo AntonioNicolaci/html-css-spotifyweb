@@ -11,6 +11,9 @@ body{
 h3{
     color: #fff;
 }
+/*#update, nav, #controllo{
+    position: fixed;
+}*/
 /* ---------------------------------------------- UPDATE BAR ---------------------------------------------- */
 /* BARRA CON IL PULSANTE "EFFETTUA L'UPDATE" */
 #update{
@@ -18,8 +21,7 @@ h3{
     justify-content: end;
     background-color: rgba(0, 0, 0, 0.5);
     padding: 2em 1em 2em 0;
-    position: sticky;
-    position: absolute;
+    position: fixed;
     left: 0;
     right: 0;
     z-index: 10;
@@ -42,7 +44,7 @@ nav{
     width: 13em;
     height: calc(100vh - 5em);
     padding: 0 .5em;
-    position: sticky;
+    position: fixed;
     left: 0;
     right: 0;
     z-index: 20;
@@ -115,9 +117,9 @@ nav div{
     width: 100vw;
     height: 5em;
     color: #fff;
-    position: sticky;
-    position: absolute;
+    position: fixed;
     right: 0;
+    top: 92vh;
     z-index: 30;
     background-color: #282828;
 }
@@ -191,34 +193,87 @@ main{
     position: absolute;
     top: 7em;
     left: 13.5em;
-    z-index: 100;
 }
+main h3{
+    color: #fff;
+}
+main h3:not(.mrp-card h3, .mcpt-card h3, .map-card h3){
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+#mian-rp, #main-creato-per-te, #main-artisti-popolari{
+    align-self: flex-start;
+    padding-left: 0.5em;
+}
+/* ZONA CON I BOTTONI PER DECIDERE I TIPI DELLE PLAYLIST */
 #main-bottoni{
     display: flex;
     gap: 1em;
 }
-#mian-rp, #main-creato-per-te, #main-artisti-popolari{
-    align-self: flex-start;
-}
+/* ZONA CON I BOTTONI PER DECIDERE I TIPI DELLE PLAYLIST */
+
+/* ZONA CON LE TRACCE ASACOLTATE DI RECENTE */
 #main-rp{
     display: flex;
     flex-direction: column;
 }
-#main-rp h3:not(.mrp-card h3){
-    padding-left: .5em;
-    margin-bottom: 1em;
-}
 #main-rp div{
     display: flex;
+    gap: 20px;
 }
 .mrp-card{
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    width: calc(100% - 20px);
+    width: calc(100% / 6); 
 }
 .mrp-card img{
-    width: calc(100% - 20px);
+    width: 100%;
 }
+/* ZONA CON LE TRACCE ASACOLTATE DI RECENTE */
+
+/* ZONA CON LE PLAYLIST CREATE PER TE */
+#main-creato-per-te{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+#main-creato-per-te div{
+    display: flex;
+    gap: 20px;
+}
+.mcpt-card{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: calc(100% / 6 - 20px);
+}
+/* ZONA CON LE PLAYLIST CREATE PER TE */
+
+/* ZONA CHE CONTIENE LE PLAYLIST CON GLI ARTISTI PIU' POPOLARI */
+#main-artisti-popolari{
+    display: flex;
+    flex-direction: column;
+    min-width: 100%;
+    margin-bottom: 6em;
+}
+#main-artisti-popolari div{
+    display: flex;
+    gap: 20px;
+}
+.map-card{
+    flex-direction: column;
+    text-align: center;
+    width: calc(100% / 6 - 20px);
+}
+.map-img{
+    align-items: center;
+    overflow: hidden;
+    border-radius: 50%;
+}
+.map-img img{
+    width: 100%;
+}
+/* ZONA CHE CONTIENE LE PLAYLIST CON GLI ARTISTI PIU' POPOLARI */
 /* ---------------------------------------------- MAIN SEZIONE DELLA MUSICA ---------------------------------------------- */
